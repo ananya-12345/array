@@ -1,0 +1,198 @@
+<html>
+    <p>
+        How to declare the arrays ? 
+        <h4 id="a"> 
+
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the first element of the array ?
+        <h4 id="a1"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the second element of the array ?
+        <h4 id="a2"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the third element of the array ?
+        <h4 id="a3"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to get the length of the array ?
+        <h4 id="a4"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to loop the array array ?
+        <h4 id="a5"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add element at the end of the array ?
+        <h4 id="a6"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the end of the array ?
+        <h4 id="a7"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to declare the arrays with alphabets ? 
+        <h4 id="a8"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to reverse the arrays with alphabets ? 
+        <h4 id="a9"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to sort the arrays with alphabets ? 
+        <h4 id="a10"> 
+        </h4>
+    </p>
+<hr>      
+    <p>
+        How to declare the arrays with numbers ? 
+        <h4 id="a11"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the maximum number from the arrays ? 
+        <h4 id="a12"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the minimum number from the arrays ? 
+        <h4 id="a13"> 
+        </h4>
+    </p>
+
+    <h3 style="background-color: red; font-size: 23px;">
+        ADDITIONAL ACTIVITY
+    </h3>
+    <p>
+        How to add element at the start of the array ? Hint use unshift method
+        <h4 id="add_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the start of the array ? Hint use unshift method
+        <h4 id="add_more_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the start of the array ? Hint use shift method
+        <h4 id="remove_element_from_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the end of the array ? Hint use pop method
+        <h4 id="remove_element_from_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to merge two arrays ? Hint define two arrays and then use concat method for eg - array1.concat(array2)
+        <h4 id="merge_two_arrays"> 
+        </h4>
+    </p>
+
+<script>
+  
+    //How to declare the arrays ? the id to be refer for innerHTML is declaration_of_arrays
+var x=["banana","mango","kiwi"];
+console.log(x);
+document.getElementById("a").innerHTML=x;
+    //How to fetch the first element of the array ? the id to be refer for innerHTML is access_first_element
+var x1=x[0];
+console.log(x1);
+document.getElementById("a1").innerHTML=x1;
+    //How to fetch the second element of the array ? the id to be refer for innerHTML is access_second_element
+var x2=x[1];
+console.log(x2);
+document.getElementById("a2").innerHTML=x2;
+    //How to fetch the third element of the array ? the id to be refer for innerHTML is access_third_element
+var x3=x[2];
+console.log(x3);
+document.getElementById("a3").innerHTML=x3;
+    //How to get the length of the array ? the id to be refer for innerHTML is display_length_of_array
+var x4=x.length;
+console.log(x4);
+document.getElementById("a4").innerHTML=x4;
+    //How to loop the array ? the id to be refer for innerHTML is loop_the_array
+var x5="";
+for(i=0;i<x.length;i++){
+    console.log(x[i]);
+    x5=x5+x[i]+"<br>";
+}
+document.getElementById("a5").innerHTML=x5;
+    //adding element at the end of the array using push method
+    x.push("strawberry");
+    console.log(x);
+    document.getElementById("a6").innerHTML=x;
+    //How to add element at the end of the array ? the id to be refer for innerHTML is add_element_at_the_end_of_array
+    x.push("orange");
+    console.log(x);
+    document.getElementById("a7").innerHTML=x;
+    //How to declare array with alphabets ? the id to be refer for innerHTML is display_alphabets_array
+var d=["a","b","c"];
+console.log(d);
+document.getElementById("a8").innerHTML=d;
+    //How to reverse the array ? the id to be refer for innerHTML is display_reverse_array
+d.reverse();
+console.log(d);
+document.getElementById("a9").innerHTML=d;
+    //How to sort array with alphabets ? the id to be refer for innerHTML is display_sorted_alphabets_array
+d.sort();
+console.log(d);
+document.getElementById("a10").innerHTML=d;
+    //How to declare array with numbers ? the id to be refer for innerHTML is display_number_array
+var c=["1","2","3"];
+console.log(c);
+document.getElementById("a11").innerHTML=c;
+    //How to find the maximum number from the array with numbers ? the id to be refer for innerHTML is display_maximum_number
+var c1=Math.max.apply(Math,c);
+console.log(c1);
+document.getElementById("a12").innerHTML=c1;
+    //How to find the minimum number from the array with numbers ? the id to be refer for innerHTML is display_minimum_number
+var c2=Math.min.apply(Math,c);
+console.log(c2);
+document.getElementById("a13").innerHTML=c2;
+    console.log("ADDITIONAL ACTIVITY");
+
+    //Use unshift method to add element at the start of the array . the id to be refer for innerHTML is add_element_at_the_start_of_array
+
+    //Use unshift method to add more elements at the start of the array . the id to be refer for innerHTML is add_more_element_at_the_start_of_array
+
+    //Use shift method to remove elements from the start of the array . the id to be refer for innerHTML is remove_element_from_start_of_array
+
+    //Use pop method to remove elements from the end of the array . the id to be refer for innerHTML is remove_element_from_end_of_array
+
+    //How declare array with first world country ? 
+
+    //How declare array with second world country ? 
+
+    //use concat method to merge two arrays . the id to be refer for innerHTML is merge_two_arrays
+
+</script>
+</html>
